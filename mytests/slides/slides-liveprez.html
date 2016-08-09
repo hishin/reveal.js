@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="utf-8">
+		<title>Live Presentations: Slides</title>
+		<meta name="description" content="Slides">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/night.css">
+
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-otf-fragment-order-slide="" data-id="c94f8cd2f44e54a0f9cf19b22c94bc9a" >
+<div class="sl-block" data-block-type="image" style="min-width: 30px; min-height: 30px; width: 244.989px; height: 300px; left: 358px; top: 260px;" data-block-id="34cfcea5116e7d62ed6e399c48a99f2a">
+    <div class="sl-block-content" style="z-index: 11;" data-inline-svg="false">
+        <img data-natural-width="383" data-natural-height="469" data-src="mytests/svg/graphicsbunny.svg">
+        
+    </div>
+</div>
+<div class="sl-block" data-block-type="image" style="min-width: 30px; min-height: 30px; width: 635.476px; height: 85px; left: 160px; top: 70px;" data-block-id="4a4ef81d2fee1a729ea0093912aeb07f" >
+    <div class="sl-block-content" style="z-index: 12;">
+        <img data-natural-width="471" data-natural-height="63" data-src="mytests/svg/livepresentations.svg">
+    </div>
+</div></section>
+			</div>
+		</div>
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history : true,
+				otfFragmentOrder : true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies : [ {
+					src : 'plugin/markdown/marked.js'
+				}, {
+					src : 'plugin/markdown/markdown.js'
+				}, {
+					src : 'plugin/notes/notes.js',
+					async : true
+				}, {
+					src : 'plugin/highlight/highlight.js',
+					async : true,
+					callback : function() {
+						hljs.initHighlightingOnLoad();
+					}
+				}, {
+					src : 'plugin/chalkboard/chalkboard.js'
+				}, {
+					src : 'plugin/otf-fragment-order/otf-fragment-order.js',
+					async : true,
+					condition : function() {
+						return !!document.body.classList;
+					}
+				} , {
+					src : 'plugin/liveink/liveink.js'
+				}],
+				keyboard : {
+					67 : function() {
+						RevealChalkboard.toggleNotesCanvas()
+					}, // toggle notes canvas when 'c' is pressed
+					66 : function() {
+						RevealChalkboard.toggleChalkboard()
+					}, // toggle chalkboard when 'b' is pressed
+					46 : function() {
+						RevealChalkboard.clear()
+					}, // clear chalkboard when 'DEL' is pressed
+					8 : function() {
+						RevealChalkboard.reset()
+					}, // reset chalkboard data on current slide when 'BACKSPACE' is pressed
+					68 : function() {
+						RevealChalkboard.download()
+					}, // downlad recorded chalkboard drawing when 'd' is pressed
+				}
+			});
+		</script>
+
+
+
+
+		
+
+	</body>
+</html>

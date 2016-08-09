@@ -223,6 +223,10 @@
 		autoSlideStartTime = -1,
 		autoSlidePaused = false,
 
+        // Mouse cursor positions to handle click events
+        cursorX = -1,
+        cursorY = -1,
+
 		// Holds information about the currently ongoing touch input
 		touch = {
 			startX: 0,
@@ -4075,6 +4079,7 @@
 		cueAutoSlide();
 
 	}
+
 
 	/**
 	 * Handler for the 'touchstart' event, enables support for

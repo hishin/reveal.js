@@ -1,104 +1,130 @@
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<meta name="viewport"
-	content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-<title>reveal.js</title>
+    <title>reveal.js</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
 
-<link rel="stylesheet" href="css/reveal.css">
-<link rel="stylesheet" href="css/theme/black.css">
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- Bootstrap css -->
+    <link rel="stylesheet"
+          type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css'
+                : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
 
-<!-- Theme used for syntax highlighting of code -->
-<link rel="stylesheet" href="lib/css/zenburn.css">
-
-<!-- Printing and PDF exports -->
-<script>
-	var link = document.createElement('link');
-	link.rel = 'stylesheet';
-	link.type = 'text/css';
-	link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css'
-			: 'css/print/paper.css';
-	document.getElementsByTagName('head')[0].appendChild(link);
-	3
-</script>
+    </script>
 </head>
 <body>
-	<div class="reveal">
-		<div class="slides">
-			<section data-otf-fragment-order-slide>
-				<h2>The seven dwarf</h2>
-				<p>Do you know them all?</p>
-				<ul>
-					<li class="fragment">Doc</li>
-					<li class="fragment">Grumpy</li>
-					<li class="fragment">Happy</li>
-					<li class="fragment">Sleepy</li>
-					<li class="fragment">Bashful</li>
-					<li class="fragment">Sneezy</li>
-					<li class="fragment">Dopey</li>
+<div class="theme-font-montserrat theme-color-white-blue" style="width: 100%; height: 100%;">
+    <div class="reveal">
+        <div class="slides">
+            <section data-otf-fragment-order-slide="">
+                <div class="sl-block" data-block-type="image" style="min-width: 30px; min-height: 30px; width: 635.476px; height: 85px; left: 160px; top: 55px;">
+                    <div class="sl-block-content" style="z-index: 11;">
+                        <img data-natural-width="471" data-natural-height="63" data-src="mytests/svg/livepresentations.svg"/>
+                    </div>
+                </div>
+                <div class="sl-block speaker-only" data-block-type="image" style="min-width: 30px; min-height: 30px; width: 277.714px; height: 343px; left: 327px; top: 280px;">
+                    <div class="sl-block-content" style="z-index: 12;">
+                        <img data-natural-width="553" data-natural-height="683" data-src="mytests/images/bunny.gif"/>
+                    </div>
+                </div>
+                <div class="sl-block speaker-only" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 640px; left: 160px; top: 156px;">
+                    <div class="sl-block-content" style="z-index: 13; text-align: left; font-size: 43%;">
+                        <p>Live Presentations! is about assisting the speakers' live performance at presentation time. This is part of
+                            <em>presenter-notes. </em>It's only visible to the presenter. After you say this part, click on it to dismiss it from the presenter view as well.
+                        </p>
+                    </div>
+                </div>
+                <div class="sl-block speaker-only" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 146px; left: 640px; top: 280px;">
+                    <div class="sl-block-content" style="z-index: 14; font-size: 48%;">
+                        <p>Trace the outline of the bunny!</p>
+                    </div>
+                </div>
+                <div class="sl-block speaker-only" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 146px; left: 640px; top: 377px;">
+                    <div class="sl-block-content" style="z-index: 15; font-size: 48%;">
+                        <p>Then click the bunny to reveal the underlying bunny.</p>
+                    </div>
+                </div>
+                <div class="sl-block speaker-only" data-block-type="image" style="min-width: 30px; min-height: 30px; width: 360px; height: 200.052px; left: 7px; top: 266px;">
+                    <div class="sl-block-content" style="z-index: 16;" data-inline-svg="false">
+                        <img data-natural-width="763" data-natural-height="424" data-src="mytests/svg/bunnyhi.svg"/>
+                    </div>
+                </div>
 
-				</ul>
-				<aside class="notes">These are some notes. They will be
-					shown in presenter view (hit 's' on your keyboard)</aside>
+            </section>
+            <section>
+                <h2>Slide 2</h2>
+            </section>
+        </div>
+    </div>
+</div>
 
-			</section>
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
 
-			<section>Slide 2</section>
-		</div>
-	</div>
+<script>
+    // More info https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        center: false,
+        history: true,
+        otfFragmentOrder: true,
 
-	<script src="lib/js/head.min.js"></script>
-	<script src="js/reveal.js"></script>
+        // More info https://github.com/hakimel/reveal.js#dependencies
+        dependencies: [{
+            src: 'plugin/markdown/marked.js'
+        }, {
+            src: 'plugin/markdown/markdown.js'
+        }, {
+            src: 'plugin/liveink/live.js',
+            async: true
+        }, {
+            src: 'plugin/highlight/highlight.js',
+            async: true,
+            callback: function () {
+                hljs.initHighlightingOnLoad();
+            }
+        }, {
+            src: 'plugin/chalkboard/chalkboard.js'
+        }, {
+            src: 'plugin/otf-fragment-order/otf-fragment-order.js',
+            async: true,
+            condition: function () {
+                return !!document.body.classList;
+            }
+        }, {
+            src: 'plugin/liveink/liveink.js'
+        }],
+        keyboard: {
+            67: function () {
+                RevealChalkboard.toggleNotesCanvas()
+            }, // toggle notes canvas when 'c' is pressed
+            66: function () {
+                RevealChalkboard.toggleChalkboard()
+            }, // toggle chalkboard when 'b' is pressed
+            46: function () {
+                RevealChalkboard.clear()
+            }, // clear chalkboard when 'DEL' is pressed
+            8: function () {
+                RevealChalkboard.reset()
+            }, // reset chalkboard data on current slide when 'BACKSPACE' is pressed
+            68: function () {
+                RevealChalkboard.download()
+            }, // downlad recorded chalkboard drawing when 'd' is pressed
+        }
+    });
+</script>
 
-	<script>
-		// More info https://github.com/hakimel/reveal.js#configuration
-		Reveal.initialize({
-			history : true,
-			otfFragmentOrder : true,
 
-			// More info https://github.com/hakimel/reveal.js#dependencies
-			dependencies : [ {
-				src : 'plugin/markdown/marked.js'
-			}, {
-				src : 'plugin/markdown/markdown.js'
-			}, {
-				src : 'plugin/notes/notes.js',
-				async : true
-			}, {
-				src : 'plugin/highlight/highlight.js',
-				async : true,
-				callback : function() {
-					hljs.initHighlightingOnLoad();
-				}
-			}, {
-				src : 'plugin/chalkboard/chalkboard.js'
-			}, {
-				src : 'plugin/otf-fragment-order/otf-fragment-order.js',
-				async : true,
-				condition : function() {
-					return !!document.body.classList;
-				}
-			} ],
-			keyboard : {
-				67 : function() {
-					RevealChalkboard.toggleNotesCanvas()
-				}, // toggle notes canvas when 'c' is pressed
-				66 : function() {
-					RevealChalkboard.toggleChalkboard()
-				}, // toggle chalkboard when 'b' is pressed
-				46 : function() {
-					RevealChalkboard.clear()
-				}, // clear chalkboard when 'DEL' is pressed
-				8 : function() {
-					RevealChalkboard.reset()
-				}, // reset chalkboard data on current slide when 'BACKSPACE' is pressed
-				68 : function() {
-					RevealChalkboard.download()
-				}, // downlad recorded chalkboard drawing when 'd' is pressed				
-			}
-		});
-	</script>
 </body>
 </html>

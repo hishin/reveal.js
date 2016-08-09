@@ -1,0 +1,7 @@
+.speaker-only {
+    visibility: hidden;
+}
+
+#so-element-context-menu {
+    visibility: hidden;
+}
